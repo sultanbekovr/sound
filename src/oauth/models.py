@@ -20,8 +20,9 @@ class AuthUser(models.Model):
     )
 
     @property
-    def is_auth(self):
-        """ Всегда возвразает тру, это способ узанть, был ли пользователь аутентифицирован"""
+    def is_authenticated(self):
+        """ Всегда возвращает True. Это способ узнать, был ли пользователь аутентифицированы
+        """
         return True
 
     def __str__(self):
